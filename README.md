@@ -1,47 +1,29 @@
-# catvip
+# BITP 3453 - CATVIP
 
-A new Flutter project.
+CatViP is an innovative application that offers an effective way to track and find a missing cat, providing answers to both the pain of missing cats and the demand for expert assistance. It is a platform where people can post and share about their cat. When a missing cat is found, the application allows the finder to contact the cat owner and provide a feature to pin the cat’s location. Moreover, this application also offers cat expertise services where a cat owner can get consultation or advice about their furry friends. 
 
-## Getting Started
+## Team Members
+1. WAFIR DZIHNI BIN ROZUKI (B032110304)
 
-This project is a starting point for a Flutter application.
+## Problem Statement
 
-A few resources to get you started if this is your first Flutter project:
+### -Lack of platform to share cat’s daily routine among cat owners.  
+Despite the growing number of pet owners, especially cat owners, there is currently no centralized platform for individuals to share and celebrate their daily routines and experiences with their cats. This results in missed opportunities to connect, learn, and bond over a shared passion for cat companions. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### -Limited source of expert advice since the information regarding the cat issues is not centralized. 
+Not all members of the pet owner community possess the necessary knowledge and expertise to provide optimal care for their cats. This knowledge gap can lead to health and well-being concerns for cats and owners alike. An accessible source of information and expert advice is essential to address this issue. 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### -It is time-consuming to report and find the missing cat. 
+As cats are known for their active and independent nature, there has been a notable increase in missing cat cases over the years. These cases cause distress for owners and the cats themselves. A platform that can facilitate the urgent reporting of missing cats and the mobilization of nearby cat enthusiasts for assistance is needed to address this problem. 
 
+## Objective
 
----------------------------------------------
-What to do when you want to create a new page with bottom nav bar (thank you wafir!!!!)
-1. in navigator.dart
-   // declare a route
-   static const String fifthRoute = '/profile';
-   // put into switch case, UserMenu is the class name of your page
-   case fifthRoute:
-        return MaterialPageRoute(builder: (_) => UserMenu());
-3. declare your page, must add bottomNavigationBar at bottom
+### -To Establish a Dedicated Platform for Cat Daily Routine Sharing 
+This platform will be a centralized hub for all cat owners, motivating them to share their daily activities, routines, and experiences with their furry friends. This platform aims to develop a vigorous community that shares the same passion. By developing this platform, it can improve the unique bond between cats and their owners. 
 
+### -To Provide Comprehensive Cat Care Resources 
+Due to the limited knowledge and advice from a cat expert, this platform provides the source of expertise, offering comprehensive cat care resources. This platform will provide educational content about cats and encourage peer-to-peer learning between the cat owner and cat experts. Through the expert services provided, it aims to empower the cat’s owner knowledge about their feline companions. 
 
-import 'package:flutter/material.dart';
-import '../../pageRoutes/bottom_navigation_bar.dart';
+### -To Lessen the Issue of Missing Cats 
+To tackle the time-consuming of this nature process, this digitalized platform offers to simplify the process of reporting and finding cats. It will create a supporting community that will contribute to find the missing cats. Thus, it will increase the chance of the cat owners to find their missing friends.  
 
-class UserMenu extends StatefulWidget {
-  const UserMenu({super.key});
-  @override
-  State<UserMenu> createState() => _UserMenuState();
-}
-
-class _UserMenuState extends State<UserMenu> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Text("this is user profile page"),
-      bottomNavigationBar: CustomBottomNavigationBar(),
-    );
-  }
-}
