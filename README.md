@@ -4,7 +4,9 @@ CatViP is an innovative application that offers an effective way to track and fi
 
 ## Team Members
 1. WAFIR DZIHNI BIN ROZUKI (B032110304)
-
+2. AMIER BIN ROSLAN (B032110378)
+3. SITI NUR SYAFIQAH BINTI NASIR (B032110095)
+   
 ## Problem Statement
 
 ### -Lack of platform to share cat’s daily routine among cat owners.  
@@ -26,6 +28,9 @@ Due to the limited knowledge and advice from a cat expert, this platform provide
 
 ### -To Lessen the Issue of Missing Cats 
 To tackle the time-consuming of this nature process, this digitalized platform offers to simplify the process of reporting and finding cats. It will create a supporting community that will contribute to find the missing cats. Thus, it will increase the chance of the cat owners to find their missing friends.  
+
+### -Database Used
+   Microsoft SQL Server (MSSQL) is like a big organized filing cabinet for data. It's putting information in tables and using specific keys to communicate it. Each table looks like a grid with rows and columns, which is quite similar to the spreadsheet. Each column is an individual piece of information, and each row contains a specific detail about it. These special keys make it easier to keep everything organized and to make sure that each piece of information is properly linked. MSSQL helps to quickly find the data, ensures it is accurate and allows you to display them in many different ways. In order to ensure that any changes to the data are correct, some tasks are also performed automatically. This system ensures that the information remains clean and error free, making it easier for people to work with their data safely and effectively.
 
 ### -List of Tables
 1. Users
