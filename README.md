@@ -27,7 +27,7 @@ Due to the limited knowledge and advice from a cat expert, this platform provide
 ### -To Lessen the Issue of Missing Cats 
 To tackle the time-consuming of this nature process, this digitalized platform offers to simplify the process of reporting and finding cats. It will create a supporting community that will contribute to find the missing cats. Thus, it will increase the chance of the cat owners to find their missing friends.  
 
-### -List of Table
+### -List of Tables
 1. Users
 2. Roles
 3. ExpertApplications
