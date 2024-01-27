@@ -1,0 +1,110 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Recovery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #6e3c17;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cat Vip Password Recovery</h2>
+        <form id="recoveryForm" method="post">
+            <input id="email" name="email" type="hidden" value="@Model" />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="retypePassword">Retype Password:</label>
+            <input type="password" id="retypePassword" name="retypePassword" required>
+
+            <button type="button" onclick="validatePassword()">Submit</button>
+            <p class="error-message" id="errorMessage"></p>
+        </form>
+    </div>
+
+    <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var retypePassword = document.getElementById("retypePassword").value;
+            var errorMessage = document.getElementById("errorMessage");
+
+            if (password.length < 6) {
+                errorMessage.innerHTML = "Password should be at least 6 characters.";
+            } else if (password !== retypePassword) {
+                errorMessage.innerHTML = "Passwords do not match.";
+            } else {
+                // Reset error message
+                errorMessage.innerHTML = "";
+
+                // Make API request using fetch
+                fetch("../api/auth/reset-password", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ "email": document.getElementById("email").value, "password": password }),
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            // Success
+                            document.getElementById("recoveryForm").style.display = "none";
+                            alert("Password reset successful!");
+                        } else {
+                            // Error
+                            errorMessage.innerHTML = "An error occurred. Please try again.";
+                        }
+                    })
+                    .catch(error => {
+                        // Error in the fetch operation
+                        errorMessage.innerHTML = "An error occurred. Please try again.";
+                    });
+            }
+        }
+    </script>
+
+
+</body>
+</html>
