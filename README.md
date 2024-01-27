@@ -32,6 +32,22 @@ To tackle the time-consuming of this nature process, this digitalized platform o
 ## Database Used
    Microsoft SQL Server (MSSQL) is like a big organized filing cabinet for data. It's putting information in tables and using specific keys to communicate it. Each table looks like a grid with rows and columns, which is quite similar to the spreadsheet. Each column is an individual piece of information, and each row contains a specific detail about it. These special keys make it easier to keep everything organized and to make sure that each piece of information is properly linked. MSSQL helps to quickly find the data, ensures it is accurate and allows you to display them in many different ways. In order to ensure that any changes to the data are correct, some tasks are also performed automatically. This system ensures that the information remains clean and error free, making it easier for people to work with their data safely and effectively.
 
+## List of functionality
+1. Login
+2. Sign up
+3. Add post
+4. View posts
+5. Report post
+6. Comment post
+7. Chatting
+8. Report missing cat
+9. View your report
+10. Register cat
+11. View your profile
+12. Expert application
+13. Follow or unfollow other user
+14. View missing cat cases.
+
 ## List of Tables
 1. Users
 2. Roles
