@@ -60,7 +60,7 @@ import 'bloc/report case/new report case/newCase_bloc.dart';
 import 'bloc/report case/new report case/newCase_state.dart';
 
 // we are at original file
-
+// this is merge
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
